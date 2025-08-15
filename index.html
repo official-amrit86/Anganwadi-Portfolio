@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anganwadi Karyakarta • Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body class="bg-3d text-slate-100">
+  <!-- Decorative Orbs -->
+  <div class="orb w-72 h-72 bg-fuchsia-500/40 top-[-60px] left-[-60px]"></div>
+  <div class="orb w-96 h-96 bg-sky-500/40 bottom-[-80px] right-[-40px]"></div>
+
+  <!-- ===== Header / Navbar ===== -->
+  <header
+    class="sticky top-0 z-50 border-b border-white/10 bg-slate-900/65 backdrop-blur supports-[backdrop-filter]:bg-slate-900/55 shadow-lg">
+    <nav class="wrap flex items-center justify-between py-3">
+      <!-- Logo -->
+      <a href="#home"
+        class="group inline-flex items-center gap-2 transform transition-transform duration-300 hover:scale-105">
+        <span
+          class="relative grid place-items-center w-9 h-9 rounded-xl bg-gradient-to-tr from-fuchsia-500 via-violet-500 to-sky-500 shadow-lg shadow-fuchsia-900/50 group-hover:shadow-sky-500/50 group-hover:rotate-6 transition-all duration-300">
+          <span class="absolute inset-0 rounded-xl opacity-40 blur-lg bg-white"></span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+            class="w-5 h-5 text-white drop-shadow">
+            <path
+              d="M12 3c4.97 0 9 3.582 9 8.001 0 5.582-7.5 9.616-8.433 10.071a1.02 1.02 0 0 1-.934 0C10.7 20.619 3 16.583 3 11 3 6.582 7.03 3 12 3Zm0 10.25a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z" />
+          </svg>
+        </span>
+        <span
+          class="font-semibold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-yellow-300 to-green-400 drop-shadow-lg">
+          Anganwadi Portfolio
+        </span>
+      </a>
+
+      <!-- Menu Button -->
+      <button id="navBtn"
+        class="md:hidden px-3 py-2 rounded-lg bg-gradient-to-tr from-pink-600 via-purple-500 to-indigo-500 text-white shadow-lg hover:scale-105 hover:shadow-indigo-500/50 transition-all duration-300">
+        Menu
+      </button>
+
+      <!-- Desktop Menu -->
+<ul id="menu" class="hidden md:flex items-center gap-5 text-sm">
+  <li>
+    <a href="#about"
+      class="relative hover:bg-gradient-to-r from-pink-500 via-purple-400 to-blue-400 hover:text-transparent bg-clip-text transition-all duration-300 hover:scale-105 hover:shadow-lg after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 hover:after:w-full after:bg-gradient-to-r from-pink-500 via-purple-400 to-blue-400 after:transition-all after:duration-300">
+      About
+    </a>
+  </li>
+  <li>
+    <a href="#services"
+      class="relative hover:bg-gradient-to-r from-emerald-400 via-cyan-400 to-sky-500 hover:text-transparent bg-clip-text transition-all duration-300 hover:scale-105 hover:shadow-lg after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 hover:after:w-full after:bg-gradient-to-r from-emerald-400 via-cyan-400 to-sky-500 after:transition-all after:duration-300">
+      Services
+    </a>
+  </li>
+  <li>
+    <a href="#initiatives"
+      class="relative hover:bg-gradient-to-r from-yellow-400 via-orange-400 to-pink-500 hover:text-transparent bg-clip-text transition-all duration-300 hover:scale-105 hover:shadow-lg after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 hover:after:w-full after:bg-gradient-to-r from-yellow-400 via-orange-400 to-pink-500 after:transition-all after:duration-300">
+      Initiatives
+    </a>
+  </li>
+  <li>
+    <a href="#impact"
+      class="relative hover:bg-gradient-to-r from-fuchsia-400 via-purple-400 to-indigo-500 hover:text-transparent bg-clip-text transition-all duration-300 hover:scale-105 hover:shadow-lg after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 hover:after:w-full after:bg-gradient-to-r from-fuchsia-400 via-purple-400 to-indigo-500 after:transition-all after:duration-300">
+      Impact
+    </a>
+  </li>
+  <li>
+    <a href="#gallery"
+      class="relative hover:bg-gradient-to-r from-green-400 via-teal-400 to-cyan-500 hover:text-transparent bg-clip-text transition-all duration-300 hover:scale-105 hover:shadow-lg after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 hover:after:w-full after:bg-gradient-to-r from-green-400 via-teal-400 to-cyan-500 after:transition-all after:duration-300">
+      Gallery
+    </a>
+  </li>
+  <li>
+    <a href="#contact"
+      class="relative hover:bg-gradient-to-r from-red-400 via-pink-400 to-orange-400 hover:text-transparent bg-clip-text transition-all duration-300 hover:scale-105 hover:shadow-lg after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 hover:after:w-full after:bg-gradient-to-r from-red-400 via-pink-400 to-orange-400 after:transition-all after:duration-300">
+      Contact
+    </a>
+  </li>
+</ul>
+
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile" class="md:hidden hidden border-t border-white/10">
+      <div class="wrap py-3 grid gap-2 text-sm">
+        <a href="#about"
+          class="hover:bg-gradient-to-r from-pink-500 via-purple-400 to-blue-400 hover:text-transparent bg-clip-text transition-all duration-300">About</a>
+        <a href="#services"
+          class="hover:bg-gradient-to-r from-emerald-400 via-cyan-400 to-sky-500 hover:text-transparent bg-clip-text transition-all duration-300">Services</a>
+        <a href="#initiatives"
+          class="hover:bg-gradient-to-r from-yellow-400 via-orange-400 to-pink-500 hover:text-transparent bg-clip-text transition-all duration-300">Initiatives</a>
+        <a href="#impact"
+          class="hover:bg-gradient-to-r from-fuchsia-400 via-purple-400 to-indigo-500 hover:text-transparent bg-clip-text transition-all duration-300">Impact</a>
+        <a href="#gallery"
+          class="hover:bg-gradient-to-r from-green-400 via-teal-400 to-cyan-500 hover:text-transparent bg-clip-text transition-all duration-300">Gallery</a>
+        <a href="#contact"
+          class="hover:bg-gradient-to-r from-red-400 via-pink-400 to-orange-400 hover:text-transparent bg-clip-text transition-all duration-300">Contact</a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ===== Hero ===== -->
+  <section id="home" class="relative py-20 md:py-28">
+    <div class="wrap grid md:grid-cols-2 gap-10 items-center">
+      <div class="space-y-6">
+        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs glass">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          Available for Community Service & Training
+        </span>
+
+
+        <h1 class="text-4xl md:text-5xl font-bold text-center">
+          <span
+            class="float-3d bg-clip-text text-transparent bg-gradient-to-tr from-pink-100 via-blue-500 to-emerald-300">
+            I'M PUSHPA MISHRA — Anganwadi Karyakarta
+          </span>
+          <br>
+          <span class="text-white block mt-2">Dedicated to Mother & Child Care</span>
+        </h1>
+
+        <p class="text-white/80 max-w-prose">I am an experienced Anganwadi worker focused on Early Childhood Care and
+          Education (ECCE), nutrition awareness, health referrals, and women empowerment programs. I collaborate with
+          ASHA and ANM officials to drive measurable impact in my community.</p>
+        <div class="flex flex-wrap gap-3">
+          <a href="#contact"
+            class="px-5 py-3 rounded-2xl font-semibold bg-gradient-to-tr from-fuchsia-500 via-violet-500 to-sky-500 shadow-lg shadow-fuchsia-900/40 card3d shine">Contact
+            Me</a>
+          <a href="#initiatives" class="px-5 py-3 rounded-2xl font-semibold glass card3d">View Initiatives</a>
+        </div>
+        <div class="flex items-center gap-6 pt-4 text-sm text-white/80">
+          <div><span class="text-2xl font-bold text-white">5+</span><br />Years Experience</div>
+          <div><span class="text-2xl font-bold text-white">1,200+</span><br />Beneficiaries</div>
+          <div><span class="text-2xl font-bold text-white">35+</span><br />Awareness Drives</div>
+        </div>
+      </div>
+      <div class="relative grid place-items-center">
+        <div class="relative w-[320px] md:w-[420px] aspect-[4/5] rounded-[2rem] overflow-hidden card3d shine glass">
+          <img src="./assets/picture.jpg" alt="Community health and nutrition session"
+            class="w-full h-full object-cover opacity-95" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
+          <div class="absolute bottom-4 left-4 right-4 p-4 rounded-xl glass">
+            <p class="text-sm">“Every healthy child is a step towards a stronger nation.”</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section id="about" class="py-16">
+    <div class="wrap grid md:grid-cols-2 gap-8 items-start">
+      <!-- Left Column -->
+      <div class="space-y-4">
+        <h2 class="text-3xl md:text-4xl font-bold">About Me</h2>
+        <p class="text-white/80">
+          I work as an Anganwadi Karyakarta under the Integrated Child Development Services (ICDS) scheme. My daily
+          responsibilities include pre-school education, home visits, growth monitoring, immunization coordination, and
+          distribution of supplementary nutrition. I also organize Village Health, Sanitation & Nutrition Days (VHSND).
+        </p>
+        <ul class="grid sm:grid-cols-2 gap-3 text-white/85">
+          <li class="glass p-3 rounded-xl">✅ ECCE & Play-based Learning</li>
+          <li class="glass p-3 rounded-xl">✅ Growth Monitoring & MUAC</li>
+          <li class="glass p-3 rounded-xl">✅ Nutrition Counseling</li>
+          <li class="glass p-3 rounded-xl">✅ Maternal Health Support</li>
+          <li class="glass p-3 rounded-xl">✅ Community Mobilization</li>
+          <li class="glass p-3 rounded-xl">✅ Record Keeping & Reports</li>
+        </ul>
+      </div>
+
+      <!-- Right Column -->
+      <div class="grid gap-4">
+        <div class="p-5 rounded-2xl glass card3d">
+          <h3 class="font-semibold mb-2">Mission</h3>
+          <p class="text-white/80">
+            To ensure that every child in my service area receives quality early education,
+            adequate nutrition, and timely health interventions through compassionate, data-driven community work.
+          </p>
+        </div>
+        <div class="p-5 rounded-2xl glass card3d">
+          <h3 class="font-semibold mb-2">Vision</h3>
+          <p class="text-white/80">
+            A healthy, educated, and empowered community where mothers feel supported and children thrive.
+          </p>
+        </div>
+        <div class="p-5 rounded-2xl glass card3d">
+          <h3 class="font-semibold mb-2">Languages</h3>
+          <p class="text-white/80">Hindi, English, Bhojpuri</p>
+        </div>
+
+        <!-- New Qualification Section -->
+        <div class="p-5 rounded-2xl glass card3d">
+          <h3 class="font-semibold mb-2">Qualifications</h3>
+          <ul class="space-y-2 text-white/80">
+            <li>
+              🎓 <strong>BA in Early Childhood Education</strong> – 78%
+            </li>
+            <li>
+              📜 <strong>Anganwadi Training Certificate</strong> – Completed with Distinction
+            </li>
+            <li>
+              🏅 <strong>Nutrition & Child Health Workshop</strong> – 95% Attendance
+            </li>
+            <li>
+              💻 <strong>Basic Computer Skills</strong> – 85%
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Services / Responsibilities ===== -->
+  <section id="services" class="py-16">
+    <div class="wrap">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8">Core Services & Responsibilities</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card -->
+        <div class="p-6 rounded-2xl glass card3d">
+          <div class="text-white text-xl font-semibold mb-2">ECCE & Preschool</div>
+          <p class="text-white/80">Daily learning sessions using TLMs, rhymes, and play-based activities aligned with
+            ECCE norms.</p>
+          <ul class="mt-3 space-y-1 text-white/75 text-sm list-disc pl-5">
+            <li>Activity corners & story time</li>
+            <li>School readiness modules</li>
+            <li>Parent–child learning kits</li>
+          </ul>
+        </div>
+        <!-- Card -->
+        <div class="p-6 rounded-2xl glass card3d">
+          <div class="text-white text-xl font-semibold mb-2">Nutrition & Health</div>
+          <p class="text-white/80">Growth monitoring, nutrition counseling, THR distribution, and immunization support
+            with ASHA/ANM.</p>
+          <ul class="mt-3 space-y-1 text-white/75 text-sm list-disc pl-5">
+            <li>MUAC & weight tracking</li>
+            <li>High-risk referrals</li>
+            <li>VHSND facilitation</li>
+          </ul>
+        </div>
+        <!-- Card -->
+        <div class="p-6 rounded-2xl glass card3d">
+          <div class="text-white text-xl font-semibold mb-2">Community Outreach</div>
+          <p class="text-white/80">Home visits, adolescent sessions, SHG meetings, and campaigns on hygiene, anemia, and
+            breastfeeding.</p>
+          <ul class="mt-3 space-y-1 text-white/75 text-sm list-disc pl-5">
+            <li>Poshan Maah activities</li>
+            <li>SBCC & IEC events</li>
+            <li>Mother support groups</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Initiatives / Projects ===== -->
+  <section id="initiatives" class="py-16">
+    <div class="wrap">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8">Featured Initiatives</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <article class="rounded-2xl overflow-hidden glass card3d">
+          <img src="./assets/readiness.png" alt="Early learning activity" class="h-44 w-full object-cover" />
+          <div class="p-5">
+            <h3 class="font-semibold">School Readiness Month</h3>
+            <p class="text-white/80 text-sm mt-2">Organized 20+ playful learning sessions with TLM kits; enrolment
+              increased by 18% within 3 months.</p>
+            <ul class="mt-3 text-sm text-white/75 list-disc pl-5">
+              <li>Teacher–parent workshops</li>
+              <li>Learning outcomes tracking</li>
+            </ul>
+          </div>
+        </article>
+        <article class="rounded-2xl overflow-hidden glass card3d">
+          <img src="./assets/Poshan .png" alt="Nutrition awareness camp" class="h-44 w-full object-cover" />
+          <div class="p-5">
+            <h3 class="font-semibold">Poshan Maah Drive</h3>
+            <p class="text-white/80 text-sm mt-2">Conducted anemia screenings and nutrition demos; moderate underweight
+              reduced by 12% YoY.</p>
+            <ul class="mt-3 text-sm text-white/75 list-disc pl-5">
+              <li>Iron–folic counseling</li>
+              <li>Local recipes & THR demo</li>
+            </ul>
+          </div>
+        </article>
+        <article class="rounded-2xl overflow-hidden glass card3d">
+          <img src="https://images.unsplash.com/photo-1560264280-88b68371db39?q=80&w=1200&auto=format&fit=crop"
+            alt="Mother and child counseling" class="h-44 w-full object-cover" />
+          <div class="p-5">
+            <h3 class="font-semibold">Breastfeeding Support Week</h3>
+            <p class="text-white/80 text-sm mt-2">Peer support groups formed across 6 hamlets; EBF awareness reached
+              300+ mothers.</p>
+            <ul class="mt-3 text-sm text-white/75 list-disc pl-5">
+              <li>Lactation counseling desks</li>
+              <li>Mother–to–mother circles</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Impact Metrics ===== -->
+  <section id="impact" class="py-16">
+    <div class="wrap">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8">Impact at a Glance</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="p-6 rounded-2xl glass card3d text-center">
+          <div class="text-4xl font-extrabold">92%</div>
+          <p class="text-white/80">Immunization Coverage</p>
+        </div>
+        <div class="p-6 rounded-2xl glass card3d text-center">
+          <div class="text-4xl font-extrabold">-12%</div>
+          <p class="text-white/80">Underweight (YoY)</p>
+        </div>
+        <div class="p-6 rounded-2xl glass card3d text-center">
+          <div class="text-4xl font-extrabold">+18%</div>
+          <p class="text-white/80">ECCE Enrollment</p>
+        </div>
+        <div class="p-6 rounded-2xl glass card3d text-center">
+          <div class="text-4xl font-extrabold">300+</div>
+          <p class="text-white/80">Mothers Reached</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Gallery ===== -->
+  <section id="gallery" class="py-16">
+    <div class="wrap">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8">Gallery</h2>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
+        <figure class="rounded-2xl overflow-hidden glass card3d shine">
+          <img class="w-full h-56 object-cover"
+            src="https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1200&auto=format&fit=crop"
+            alt="Growth monitoring camp" />
+        </figure>
+        <figure class="rounded-2xl overflow-hidden glass card3d shine">
+          <img class="w-full h-56 object-cover"
+            src="https://images.unsplash.com/photo-1584515933487-779824d29309?q=80&w=1200&auto=format&fit=crop"
+            alt="Nutrition counseling" />
+        </figure>
+        <figure class="rounded-2xl overflow-hidden glass card3d shine">
+          <img class="w-full h-56 object-cover" src="./assets/ecce.png" alt="ECCE play-based learning" />
+        </figure>
+        <figure class="rounded-2xl overflow-hidden glass card3d shine">
+          <img class="w-full h-56 object-cover" src="./assets/awareness.png" alt="Community awareness rally" />
+        </figure>
+        <figure class="rounded-2xl overflow-hidden glass card3d shine">
+          <img class="w-full h-56 object-cover" src="./assets/homevisite.png" alt="Home visit" />
+        </figure>
+        <figure class="rounded-2xl overflow-hidden glass card3d shine">
+          <img class="w-full h-56 object-cover" src="./assets/tranning.png" alt="Training session" />
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Testimonials ===== -->
+  <section class="py-16">
+    <div class="wrap">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8">Testimonials</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <blockquote class="p-6 rounded-2xl glass card3d">
+          <p class="text-white/90">“She helped me during pregnancy with regular counseling and ensured my child’s
+            immunization on time.”</p>
+          <footer class="mt-3 text-white/70 text-sm">— Meera Devi, Beneficiary</footer>
+        </blockquote>
+        <blockquote class="p-6 rounded-2xl glass card3d">
+          <p class="text-white/90">“Excellent coordination during VHSNDs and Poshan Maah. Very proactive and dedicated.”
+          </p>
+          <footer class="mt-3 text-white/70 text-sm">— ANM, Sub-center</footer>
+        </blockquote>
+        <blockquote class="p-6 rounded-2xl glass card3d">
+          <p class="text-white/90">“Children love attending her ECCE sessions. Learning outcomes have improved visibly.”
+          </p>
+          <footer class="mt-3 text-white/70 text-sm">— School Principal</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Skills & Training ===== -->
+  <section class="py-16">
+    <div class="wrap grid md:grid-cols-2 gap-8 items-start">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Skills</h2>
+        <div class="grid grid-cols-2 gap-3">
+          <div class="glass rounded-xl p-4">📊 Growth Monitoring</div>
+          <div class="glass rounded-xl p-4">🍲 Nutrition Counseling</div>
+          <div class="glass rounded-xl p-4">🧒 ECCE Facilitation</div>
+          <div class="glass rounded-xl p-4">📑 Documentation (ICDS)</div>
+          <div class="glass rounded-xl p-4">🤝 SHG & Community Work</div>
+          <div class="glass rounded-xl p-4">🩺 Health Referrals</div>
+        </div>
+      </div>
+      <div>
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Training & Certifications</h2>
+        <ul class="grid gap-3">
+          <li class="glass rounded-xl p-4">Induction Training — ICDS/ECCE [Year]</li>
+          <li class="glass rounded-xl p-4">Refresher Training on Growth Monitoring & MUAC [Year]</li>
+          <li class="glass rounded-xl p-4">SBCC/IEC Communication Workshop [Year]</li>
+          <li class="glass rounded-xl p-4">POSHAN Abhiyaan Digital Training [Year]</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Timeline ===== -->
+  <section class="py-16">
+    <div class="wrap">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8">Experience Timeline</h2>
+      <div class="relative pl-6">
+        <span
+          class="absolute left-0 top-0 bottom-0 w-1 rounded-full bg-gradient-to-b from-fuchsia-500 via-violet-500 to-sky-500"></span>
+        <div class="mb-6">
+          <div class="glass rounded-xl p-4">
+            <div class="font-semibold">Anganwadi Karyakarta — [Village/Center Name]</div>
+            <div class="text-white/70 text-sm">2020 — Present</div>
+            <p class="text-white/80 mt-2">Lead ECCE sessions, maintain ICDS registers, coordinate VHSND and outreach
+              activities, manage THR distribution.</p>
+          </div>
+        </div>
+        <div class="mb-6">
+          <div class="glass rounded-xl p-4">
+            <div class="font-semibold">Community Volunteer — Health & Nutrition</div>
+            <div class="text-white/70 text-sm">2018 — 2020</div>
+            <p class="text-white/80 mt-2">Supported ANM/ASHA in immunization camps and awareness rallies on hygiene and
+              anemia prevention.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Awards ===== -->
+  <section class="py-16">
+    <div class="wrap">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8">Awards & Recognition</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="glass rounded-2xl p-6 card3d">
+          <div class="font-semibold">Best Anganwadi Worker — District Level</div>
+          <p class="text-white/80 text-sm mt-2">Recognized for outstanding ECCE sessions and community mobilization.</p>
+        </div>
+        <div class="glass rounded-2xl p-6 card3d">
+          <div class="font-semibold">Poshan Champion</div>
+          <p class="text-white/80 text-sm mt-2">Awarded during Poshan Maah for innovative nutrition demos.</p>
+        </div>
+        <div class="glass rounded-2xl p-6 card3d">
+          <div class="font-semibold">Community Leader Recognition</div>
+          <p class="text-white/80 text-sm mt-2">Honored by Panchayat for excellent health outreach.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="py-16">
+    <div class="wrap">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8">Frequently Asked Questions</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <details class="glass rounded-2xl p-6 card3d">
+          <summary class="font-semibold cursor-pointer">What services are provided at the Anganwadi Center?</summary>
+          <p class="text-white/80 mt-2">ECCE, supplementary nutrition, health referrals, growth monitoring, and
+            community awareness activities.</p>
+        </details>
+        <details class="glass rounded-2xl p-6 card3d">
+          <summary class="font-semibold cursor-pointer">How can mothers join support groups?</summary>
+          <p class="text-white/80 mt-2">Visit the center during working hours or contact me through the form below to be
+            added to the nearest group.</p>
+        </details>
+        <details class="glass rounded-2xl p-6 card3d">
+          <summary class="font-semibold cursor-pointer">Do you conduct home visits?</summary>
+          <p class="text-white/80 mt-2">Yes, especially for high-risk pregnancies, newborn care, and growth follow-ups.
+          </p>
+        </details>
+        <details class="glass rounded-2xl p-6 card3d">
+          <summary class="font-semibold cursor-pointer">Can I volunteer?</summary>
+          <p class="text-white/80 mt-2">Community volunteers are welcome during campaigns; training can be provided.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section id="contact" class="py-16">
+    <div class="wrap">
+      <div class="grid lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2 glass rounded-2xl p-6 card3d">
+          <h2 class="text-3xl md:text-4xl font-bold mb-3">Get in Touch</h2>
+          <p class="text-white/80 mb-6">Feel free to contact me for community programs, training sessions, or
+            collaboration.</p>
+
+          <form id="contactForm" onsubmit="sendEmail(event)" class="grid md:grid-cols-2 gap-4">
+            <div>
+              <label class="text-sm text-white/80" for="name">Name</label>
+              <input id="name" required
+                class="mt-1 w-full rounded-xl px-4 py-3 bg-white/5 border border-white/15 focus:outline-none focus:ring-2 focus:ring-fuchsia-500"
+                placeholder="Your full name" />
+            </div>
+            <div>
+              <label class="text-sm text-white/80" for="phone">Phone</label>
+              <input id="phone" required
+                class="mt-1 w-full rounded-xl px-4 py-3 bg-white/5 border border-white/15 focus:outline-none focus:ring-2 focus:ring-fuchsia-500"
+                placeholder="Mobile number" type="number" />
+            </div>
+            <div class="md:col-span-2">
+              <label class="text-sm text-white/80" for="msg">Message</label>
+              <textarea id="msg" rows="4" required
+                class="mt-1 w-full rounded-xl px-4 py-3 bg-white/5 border border-white/15 focus:outline-none focus:ring-2 focus:ring-fuchsia-500"
+                placeholder="How can I help you?"></textarea>
+            </div>
+            <div class="md:col-span-2">
+              <button type="submit"
+                class="px-6 py-3 rounded-2xl font-semibold bg-gradient-to-tr from-fuchsia-500 via-violet-500 to-sky-500 shadow-lg shadow-fuchsia-900/40 w-full">
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+        <aside class="space-y-4">
+          <div class="glass rounded-2xl p-5 card3d">
+            <div class="font-semibold">Contact Details</div>
+            <p class="text-white/80 text-sm mt-2">Anganwadi Center: [Village:Tikuri 37/Block:gangeo, District:Rewa,
+              State:M.P]<br />Phone:
+              +91-9691833319<br />Email:pushpamishra07836.com</p>
+          </div>
+          <div class="glass rounded-2xl p-5 card3d">
+            <div class="font-semibold">Working Hours</div>
+            <p class="text-white/80 text-sm mt-2">Mon–Sat: 9:00 AM – 4:00 PM</p>
+          </div>
+          <div class="glass rounded-2xl p-5 card3d">
+            <div class="font-semibold">Social</div>
+            <ul class="text-white/80 text-sm mt-2 space-y-1">
+              <li><a href="#" class="hover:text-white">Facebook</a></li>
+              <li><a href="#" class="hover:text-white">Instagram</a></li>
+              <li><a href="#" class="hover:text-white">YouTube</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="border-t border-white/10 py-10 text-sm">
+    <div class="wrap flex flex-col md:flex-row items-center justify-between gap-3 text-white/70">
+      <p>© <span id="year"></span> Anganwadi Karyakarta • All rights reserved.</p>
+      <div class="flex items-center gap-3">
+        <a href="#home" class="px-3 py-1 rounded-lg glass">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    // Mobile menu toggle
+    const navBtn = document.getElementById('navBtn');
+    const mobile = document.getElementById('mobile');
+    const menu = document.getElementById('menu');
+    navBtn?.addEventListener('click', () => {
+      mobile.classList.toggle('hidden');
+    });
+
+    // Current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // contact form\\
+    (function () {
+      emailjs.init("YOUR_PUBLIC_KEY"); // Your EmailJS public key
+    })();
+
+    function sendEmail(e) {
+      e.preventDefault();
+
+      const templateParams = {
+        name: document.getElementById("name").value,
+        phone: document.getElementById("phone").value,
+        message: document.getElementById("msg").value
+      };
+
+      emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", templateParams)
+        .then(function (response) {
+          alert("✅ Message sent successfully!");
+          document.getElementById("contactForm").reset();
+        }, function (error) {
+          alert("❌ Failed to send message. Please try again.");
+          console.log(error);
+        });
+    }
+  </script>
+</body>
+
+</html>
