@@ -164,15 +164,107 @@ body {
 /* about-css */
 /* <!-- Tailwind Extra Styling for 3D effect --> */
 
-  .glass {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.card3d {
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease;
+}
+.card3d:hover {
+  transform: translateY(-5px) rotateX(5deg) rotateY(5deg);
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Smooth fading for images */
+.fade-img {
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.fade-img.loaded {
+  opacity: 1;
+}
+
+/* Simple container width utility */
+.wrap {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+html {
+  scroll-behavior: smooth; /* Smooth scrolling */
+  /* overflow-y: scroll;Always show vertical scrollbar */
+}
+/* Hero css */
+/* 3D text animation */
+@keyframes float3d {
+  0% {
+    transform: rotateY(-90deg) translateZ(50px);
+    opacity: 0;
   }
-  .card3d {
-    transform-style: preserve-3d;
-    transition: transform 0.3s ease;
+
+  25% {
+    transform: rotateY(0deg) translateZ(0);
+    opacity: 1;
   }
-  .card3d:hover {
-    transform: translateY(-5px) rotateX(5deg) rotateY(5deg);
+
+  75% {
+    transform: rotateY(0deg) translateZ(0);
+    opacity: 1;
   }
+
+  100% {
+    transform: rotateY(90deg) translateZ(50px);
+    opacity: 0;
+  }
+}
+
+.name-3d {
+  animation: float3d 5s ease-in-out infinite;
+  transform-style: preserve-3d;
+  display: inline-block;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+/* Photo 3D floating animation */
+@keyframes photoFloat {
+  0%,
+  100% {
+    transform: translateY(0px) rotateX(0deg) rotateY(0deg);
+  }
+
+  50% {
+    transform: translateY(-15px) rotateX(5deg) rotateY(-5deg);
+  }
+}
+
+.photo-3d {
+  animation: photoFloat 6s ease-in-out infinite;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+/* contact to footer */
+
+
+/* Scrollbar track */
+/* ::-webkit-scrollbar {
+  width: 10px;
+} */
+
+/* Scrollbar background */
+/* ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+} */
+
+/* Scrollbar handle */
+/* ::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #ff7eb3, #ff758c);
+  border-radius: 10px;
+} */
+
+/* Scrollbar handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ff4d6d, #ff0055);
+} */
